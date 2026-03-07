@@ -1,0 +1,68 @@
+1 Create Customer
+
+POST : http://localhost:8080/api/customers
+{
+  "name": "Rahul Sharma",
+  "email": "rahul@gmail.com",
+  "phoneNumber": "9876543210",
+  "address": "Delhi"
+}
+
+
+
+2 Get Customer
+
+GET:http://localhost:8080/api/customers
+
+
+
+3 Create Policy
+
+POST:http://localhost:8080/api/policies
+
+{
+  "policyNumber": "POL1001",
+  "policyType": "Health",
+  "premiumAmount": 2000,
+  "coverageAmount": 500000,
+  "startDate": "2026-01-01",
+  "endDate": "2027-01-01",
+  "customerId": 1
+}
+
+
+
+4 Get Policy
+
+GET:http://localhost:8080/api/policies/1
+
+
+
+5 Update Policy
+
+PUT:http://localhost:8080/api/policies/1
+{
+  "policyNumber": "POL1001",
+  "policyType": "Life",
+  "premiumAmount": 3000,
+  "coverageAmount": 800000,
+  "startDate": "2026-01-01",
+  "endDate": "2028-01-01"
+}
+
+
+6 Filter Policies
+
+GET: http://localhost:8080/api/policies/type/Health
+
+
+7 Pagination
+
+GET:http://localhost:8080/api/policies/premium?min=1000&max=5000
+
+8 Cancel Policy
+
+GET:http://localhost:8080/api/policies?page=0&size=5&sortBy=premiumAmount&direction=asc
+
+DELETE:http://localhost:8080/api/policies/1
+
