@@ -6,5 +6,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/alokraj7488/config-server-2
+          uri: https://github.com/cse-supriya-kumari/config-server-2
           clone-on-start: true
